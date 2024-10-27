@@ -1,0 +1,128 @@
+body {
+    background-image: url('/pic/bgLogin.png'); /* Replace with actual image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Istok Web', sans-serif;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* ทำให้เราสามารถกำหนดตำแหน่งลูกได้ */
+}
+
+.container {
+    padding: 20px 15px; /* ลด padding */
+    text-align: center;
+    max-width: 400px;
+    width: 50%;
+    position: absolute; /* กำหนดตำแหน่งแบบ absolute */
+    top: 13%; /* ระยะจากด้านบน */
+    left: 50%; /* กำหนดให้กลางแนวนอน */
+    transform: translateX(-50%); /* ดันไปซ้าย 50% เพื่อให้พอดีกลางจอ */
+
+    background-image: url('pic/bgtext.png'); /* ใส่เส้นทางรูปภาพของคุณ */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+
+.logo img {
+    width: 80px; /* ปรับขนาดโลโก้ */
+    height: auto;
+    margin-bottom: 15px; /* ลด margin */
+}
+
+.welcome-message {
+    font-size: 22px; /* ลดขนาดข้อความ */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+
+    
+}
+
+.sub-message {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    
+}
+
+.container label {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    display: block;
+    margin: 5px 0;
+    margin-left: 20px;
+}
+
+.container input {
+    width: 80%; /* เพิ่มความกว้าง */
+    height: 35px; /* ลดความสูง */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.container input:focus {
+    border-color: #FFA733;
+}
+
+/* จัดวาง Checkbox และ Label ให้อยู่ในบรรทัดเดียว */
+.checkbox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* ขยายความกว้างของ Wrapper */
+    margin: 5px auto; /* ลดระยะห่าง */
+}
+
+.checkbox-wrapper .left {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.signin-button {
+    background-color: #FFA733;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 80%; /* เพิ่มความกว้าง */
+    margin: 10px 0;
+}
+
+.signin-button:hover {
+    background-color: #ff8a00;
+}
+
+.or-text {
+    color: #333;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.register {
+    font-size: 15px;
+    color: #333;
+}
+
+.register a {
+    color: #0046DC;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
